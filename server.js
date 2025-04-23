@@ -18,7 +18,7 @@ app.post('/chat', async (req, res) => {
     const dsRes = await axios.post(
       DEEPSEEK_URL,
       {
-        model: 'deepseek/deepseek-v3-base:free',
+        model: "deepseek/deepseek-v3-base:free",
         messages: [
           { role: 'system', content: 'You are a first-aid and general healthcare assistant. Include a disclaimer that you are not a substitute for professional advice.' },
           { role: 'user', content: userMessage }
